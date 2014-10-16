@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/relativeLayout5">
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/pickup_type"
+    android:gravity="center_vertical|center_horizontal" android:layout_marginTop="10dip"/>
+    
+    <ImageView android:layout_width="wrap_content" android:id="@+id/help_book" android:layout_height="wrap_content" android:src="@drawable/help_icon"
+               android:layout_alignParentRight="true" android:layout_marginRight="61dip" android:layout_marginTop="4dip" android:onClick="displaybookhelp"></ImageView>
+    
+    </RelativeLayout>
+    
+<RadioGroup android:id="@+id/pickupTypeCheckbox" android:orientation="horizontal" android:gravity="center_vertical|center_horizontal" 
+             android:layout_height="wrap_content" android:layout_width="match_parent">
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Yes" 
+                 android:id="@+id/pickup_yes"></RadioButton>
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="No" 
+                 android:id="@+id/pickup_no" android:checked="true"></RadioButton>
+</RadioGroup>
+
+<TextView android:text="@string/num_of_adults" android:id="@+id/num_of_adults" android:gravity="center_vertical|center_horizontal"
+          android:layout_height="wrap_content" android:layout_width="match_parent"></TextView>
+   
+<RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/relativeLayout1">
+<SeekBar android:id="@+id/no_of_persons_seekbar"
+         android:gravity="center_vertical|center_horizontal"
+         android:layout_height="wrap_content" 
+         android:max="10" android:layout_width="250dip" android:layout_marginLeft="20dip" android:layout_marginTop="10dip"></SeekBar>
+<TextView 
+   android:textAppearance="?android:attr/textAppearanceMedium"
+   android:layout_height="wrap_content"
+   android:gravity="center_vertical|center_horizontal"
+   android:id="@+id/no_of_persons_seekbar_seekbarvalue"
+   android:text="@string/no_of_persons_seekbarvalue"
+   android:layout_width="65dip" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+</RelativeLayout>
+
+<TextView android:text="@string/num_of_children" android:id="@+id/num_of_children" android:gravity="center_vertical|center_horizontal"
+          android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="8dip"></TextView>
+          
+<RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/relativeLayout2">
+<SeekBar android:id="@+id/no_of_children_seekbar"
+         android:gravity="center_vertical|center_horizontal"
+         android:layout_height="wrap_content" 
+         android:max="10" android:layout_width="250dip" android:layout_marginLeft="20dip" android:layout_marginTop="10dip"></SeekBar>
+<TextView 
+   android:textAppearance="?android:attr/textAppearanceMedium"
+   android:layout_height="wrap_content"
+   android:gravity="center_vertical|center_horizontal"
+   android:id="@+id/no_of_children_seekbar_seekbarvalue"
+   android:text="@string/no_of_children_seekbarvalue"
+   android:layout_width="65dip" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+</RelativeLayout>
+          
+<RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/relativeLayout3">
+</RelativeLayout>
+
+<TableLayout android:layout_width="match_parent" android:id="@+id/tableLayout1" 
+             android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal">
+ 
+    <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" 
+                  android:text="Rate Type:" android:id="@+id/rate" android:layout_column="0" android:layout_marginLeft="50dip"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" 
+                  android:text="@string/rate_type_value" android:id="@+id/rate_type_value" android:layout_column="2"></TextView>
+
+    </TableRow>
+    
+    <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" 
+                  android:text="Initial Charge:     " android:id="@+id/initial_charge" android:layout_column="0" android:layout_marginLeft="50dip"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" 
+                  android:text="@string/initial_charge_value" android:id="@+id/initial_charge_value" android:layout_column="2"></TextView>
+                  
+    </TableRow>
+    
+    <TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+     
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" 
+                  android:text="Extra Charges:" android:id="@+id/extra_charges" android:layout_column="0" android:layout_marginLeft="50dip"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" 
+                  android:text="@string/extra_charges_value" android:id="@+id/extra_charges_value" android:layout_column="2"></TextView>   
+    
+    </TableRow>
+    <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content"></TableRow>
+</TableLayout>
+
+<RelativeLayout android:layout_width="match_parent" android:id="@+id/relativeLayout4" android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal">
+    <Button android:id="@+id/start_meter_button" android:text="Start Meter" android:layout_marginTop="30dip" 
+        android:gravity="center_vertical|center_horizontal" android:layout_width="150dip" android:layout_height="100dip"></Button>
+</RelativeLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+  <com.google.ads.AdView android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="480dip"
+                         ads:adUnitId="a14dfa282b088a1"
+                         ads:adSize="BANNER"
+                         ads:loadAdOnCreate="true"
+                         android:gravity="center_vertical|bottom"/>
+</LinearLayout>
+</LinearLayout>
+

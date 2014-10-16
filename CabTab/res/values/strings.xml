@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pickup_type">Did you book the taxi?</string>
+    <string name="app_name">CabTab Ireland</string>
+    <string name="num_of_adults">How many adults are in the taxi?</string>
+    <string name="no_of_persons_seekbarvalue">1</string>
+    <string name="num_of_children">How many children under 12 are in the taxi?</string>
+    <string name="num_of_bags">How many bags are in the taxi?</string>
+    <string name="no_of_children_seekbarvalue">0</string>
+    <string name="no_of_bags_seekbarvalue">0</string>
+    <string name="initial_charge_value">€0.00</string>
+    <string name="extra_charges_value">€0.00</string>
+    <string name="rate_type_value">Standard</string>
+    <string name="speed">0.0 km/h</string>
+    <string name="distance">0 km</string>
+    <string name="fare">0.00</string>
+    <string name="tariff">1</string>
+    <string name="extra">0.00</string>
+    
+    
+    <item name="stand_rate_tariffA_km" type="string">1.03</item>
+    <item name="stand_rate_tariffA_min" type="string">0.36</item>
+    <item name="stand_rate_tariffB_km" type="string">1.35</item>
+    <item name="stand_rate_tariffB_min" type="string">0.48</item>
+    <item name="stand_rate_tariffC_km" type="string">1.77</item>
+    <item name="stand_rate_tariffC_min" type="string">0.63</item>
+    
+    <item name="prem_rate_tariffA_km" type="string">1.35</item>
+    <item name="prem_rate_tariffA_min" type="string">0.48</item>
+    <item name="prem_rate_tariffB_km" type="string">1.57</item>
+    <item name="prem_rate_tariffB_min" type="string">0.55</item>
+    <item name="prem_rate_tariffC_km" type="string">1.77</item>
+    <item name="prem_rate_tariffC_min" type="string">0.63</item>
+    
+</resources>
